@@ -27,11 +27,11 @@ jobs:
         uses: docker/build-push-action@v2
         id: docker_build
         with:
-          file: ./Dockerfile
           context: ./
+          file: ./Dockerfile
           builder: ${{ steps.buildx.outputs.name }}
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/react_movie_app
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/react-movie-app
 
       - name: Verify
         run: echo ${{ steps.docker_build.outputs.digest }}
