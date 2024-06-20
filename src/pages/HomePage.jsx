@@ -12,7 +12,9 @@ const HomePage = () => {
         <MovieSwiper path="now_playing"></MovieSwiper>
       </section>
       <section className="page-container text-white">
-        <p className="capitalize text-2xl font-semibold pt-8 pb-4">Top rated</p>
+        <p className="capitalize text-2xl font-semibold pt-8 pb-4">
+          Top rating
+        </p>
         <MovieSwiper path="top_rated"></MovieSwiper>
       </section>
       <section className="page-container text-white">
