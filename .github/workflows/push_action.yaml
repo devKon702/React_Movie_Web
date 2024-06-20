@@ -31,7 +31,7 @@ jobs:
           context: ./
           builder: ${{ steps.buildx.outputs.name }}
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/${{ github.repository }}
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/react_movie_app
 
       - name: Verify
         run: echo ${{ steps.docker_build.outputs.digest }}
